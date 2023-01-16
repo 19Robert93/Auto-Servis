@@ -1,0 +1,210 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: rgb(57, 57, 57);
+  }
+  
+  
+  .meni {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+  }
+  
+  
+  .linkovi {
+    background-color: rgb(226, 226, 226);
+    padding: 1rem;
+    color: #184d9e;
+    font-size: 12pt;
+    font-weight: 600;
+    border-radius: 10%;
+  }
+  
+  
+  .linkovi:hover {
+    box-shadow: 3px 10px rgb(0 0 0 / 0.2);
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  
+  .hero-image {
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .naslov {
+    background-color: black;
+    opacity: 0.6;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5%;
+  }
+  
+  
+  .ghost {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: 2px solid white;
+  }
+  
+  .ghost:hover {
+    background-color: aliceblue;
+    color: black;
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+  }
+  
+  .slike {
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+  }
+  
+  .ponuda {
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: #184d9e;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .kartice {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+  
+  .animacija {
+    width: 300px;
+    height: 30px;
+    background-color: #184d9e;
+    animation-name: example;
+    animation-duration: 6s;
+    animation-iteration-count: 5;
+    padding: 0.5rem;
+    font-size: 14pt;
+    text-align: center;
+    justify-items: center;
+    margin: auto;
+    border: 1px;
+    border-radius: 12px;
+  }
+  
+  .cenovnik {
+    margin-top: 2rem;
+    background-color: aliceblue;
+    z-index: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+  }
+  
+  li {
+    padding: 0.5rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 20rem;
+    background-color: #7a7a7a;
+  }
+  
+  .polja {
+    font-size: 14pt;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    color: #184d9e;
+    font-size: 14pt;
+    padding: 0.5rem;
+  }
+  
+  .dugme {
+    padding: 0.7rem;
+    background-color: #184d9e;
+    font-size: 14pt;
+    color: #ffffff;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+  
+  @keyframes example {
+    from {
+      background-color: rgb(27, 79, 201);
+      color: #ffffff;
+    }
+    to {
+      background-color: rgb(255, 255, 255);
+      color: #184d9e;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .cenovnik {
+      display: flex;
+      flex-direction: column;
+    }
+    .slike {
+      width: 250px;
+    }
+    .kartice {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .meni {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      list-style-type: none;
+    }
+    .linkovi {
+      background-color: #184d9e;
+      padding: 0.7rem;
+      color: #ffffff;
+      font-size: 12pt;
+      font-weight: 600;
+      border-radius: 2%;
+      width: 80%;
+    }
+    form {
+      padding: 2rem;
+    }
+  }
+  
